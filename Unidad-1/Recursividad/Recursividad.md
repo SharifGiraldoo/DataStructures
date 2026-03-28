@@ -1,6 +1,5 @@
 ## ¿Qué es la Recursividad?
 
----
 
 La recursividad es un concepto fundamental en matemáticas y en computación.
 
@@ -18,7 +17,6 @@ También llamada como recursión o recurrencia, es una técnica de programación
 
 ## ¿Qué es Recursividad desde el punto de vista de la computación?
 
----
 
 - La recursividad (recursión) es aquella propiedad que posee un método por la
 cual puede llamarse a sí mismo. Aunque se puede utilizar la recursividad
