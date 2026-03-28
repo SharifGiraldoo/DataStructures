@@ -17,3 +17,17 @@ También llamada como recursión o recurrencia, es una técnica de programación
 ---
 
 ## ¿Qué es Recursividad desde el punto de vista de la computación?
+
+---
+
+- La recursividad (recursión) es aquella propiedad que posee un método por la
+cual puede llamarse a sí mismo. Aunque se puede utilizar la recursividad
+como una alternativa a la iteración.
+
+- Es menos eficiente en términos de tiempo de computadora que una solución
+iterativa, debido a las operaciones auxiliares que llevan consigo las
+invocaciones suplementarias a los métodos.
+
+- Diversas técnicas algorítmicas utilizan la recursión, como los algoritmos
+divide y vence y los algoritmos de vuelta atrás.
+
