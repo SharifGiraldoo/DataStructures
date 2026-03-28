@@ -29,3 +29,12 @@ invocaciones suplementarias a los métodos.
 - Diversas técnicas algorítmicas utilizan la recursión, como los algoritmos
 divide y vence y los algoritmos de vuelta atrás.
 
+--- 
+
+## Ventajas y Desventajas de la recursividad
+
+| Ventajas | Desventajas | 
+| :---:    | :---:       |
+|Simplifica problemas complejos al dividirlos en subproblemas más pequeños y similares | Puede ser difícil de entender si no se comprende bien el caso base y la recursión |
+
+
