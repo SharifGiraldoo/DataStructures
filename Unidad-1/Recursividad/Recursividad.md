@@ -15,7 +15,7 @@ También llamada como recursión o recurrencia, es una técnica de programación
 
 ---
 
-## ¿Qué es Recursividad desde el punto de vista de la computación?
+# ¿Qué es Recursividad desde el punto de vista de la computación?
 
 
 - La recursividad (recursión) es aquella propiedad que posee un método por la
@@ -31,10 +31,41 @@ divide y vence y los algoritmos de vuelta atrás.
 
 --- 
 
-## Ventajas y Desventajas de la recursividad
+# Ventajas y Desventajas de la recursividad
 
 | Ventajas | Desventajas | 
 | :---:    | :---:       |
 |Simplifica problemas complejos al dividirlos en subproblemas más pequeños y similares | Puede ser difícil de entender si no se comprende bien el caso base y la recursión |
+| Reduce la cantidad de líneas de código en comparación con las soluciones iterativas | Consumo alto de recursos como tiempo y memoria |
+| No cuenta con una secuencia de pasos exacta para la solución del problema | Puede ser difícil de depurar debido a la complejidad de las llamadas anidadas 1
 
+---
+
+# Tipos de Recursividad 
+
+| Tipo | Descripción |
+| :---:| :---: |
+| Recursividad Directa | Una función se llama a sí misma directamente |
+| Recursividad Indirecta | Una función llama a otra función, y esta segunda función termina llamando a la primera |
+| Recursividad Lineal | Cada llamada recursiva tiene solo una llamada adicional | 
+| Recursividad Múltiple | Cada llamada recursiva genera múltiples llamadas adicionales |
+| Recursividad de Cola | La llamada recursiva es la última operación realizada por la función, lo que permite optimización |
+| Recursividad No de Cola | La llamada recursiva no es la última operación; los resultados  intermedios se procesan después |
+
+---
+
+# Ejemplo de la Matrushka 
+
+```
+public static void imprimirMatrushka(int n){
+
+        if(n == 0){
+           System.out.println("No hay Matrushkas para abrir"); 
+        }else{
+            System.out.println("Abriendo Matrushka " + n);
+            imprimirMatrushka(n-1);
+        }
+
+    }
+```
 
