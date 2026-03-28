@@ -56,6 +56,18 @@ divide y vence y los algoritmos de vuelta atrás.
 
 # Ejemplo de la Matrushka 
 
+La Matrushka es una artesanía tradicional rusa. Es una muñeca de madera que
+contiene otra muñeca más pequeña dentro de sí. Ésta muñeca, también contiene
+otra muñeca dentro. Y así, una dentro de otra.
+
+---
+
+<p align="center">
+  <img src="img/image2.png" alt="alt text" />
+</p>
+
+---
+
 ```
 public static void imprimirMatrushka(int n){
 
@@ -68,4 +80,58 @@ public static void imprimirMatrushka(int n){
 
     }
 ```
+
+--- 
+
+# Funcionamiento de la recursividad 
+
+## Caso Base
+
+- Una solución simple para un caso particular (puede haber más de un caso
+base).
+- En un algoritmo recursivo, se entiende por caso base el que se resuelve sin
+recursión, directamente con unas pocas sentencias elementales.
+- El caso base se ejecuta cuando se alcanza la condición de parada de llamadas
+recursivas.
+- Para que funcione la recursión el progreso de las llamas debe tender a la
+condición de parada.
+
+---
+
+## Caso Recursivo 
+
+Una solución que involucra volver a utilizar la función original, con
+parámetros que se acercan más al caso base.
+
+- Los pasos que sigue el caso recursivo son los siguientes:
+- El procedimiento se llama a sí mismo.
+- EL problema se resuelve, tratando el mismo problema pero de tamaño
+menor.
+- La manera en la cual el tamaño del problema disminuye asegura que el caso
+base eventualmente se alcanzará.
+
+Se considera recursivo  si: 
+
+<p align="center">
+  <img src="img/image3.png" alt="alt text" />
+</p>
+
+---
+
+# Recursividad vs Iteración 
+
+| Aspecto | Recursividad | Iteración | 
+| :---: | :---: | :---: |
+| Estructura | Involucra una llamada recursiva y un caso base que detiene la recursión | Utiliza variables de control y condiciones de terminación |
+| Consumo de Memoria | Puede usar mucha memoria debido al uso de la pila de llamadas | Consume menos memoria, ya que no requiere una pila adicional |
+| Eficiencia | Puede ser menos eficiente si no se optimiza (por ejemplo, recursión de cola) | Generalmente más eficiente para problemas simples, ya que no hay llamadas adicionales | 
+
+--- 
+
+| En ambos casos podemos tener ciclos infinitos | 
+| :---: |
+| LA RECURSIVIDAD SE DEBE USAR CUANDO SEA REALMENTE NECESARIA, ES DECIR, CUANDO NO EXISTA UNA SOLUCIÓN ITERATIVA SIMPLE |
+
+
+
 
