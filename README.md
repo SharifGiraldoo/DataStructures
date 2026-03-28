@@ -7,7 +7,7 @@
 
 ---
 
-Este repositorio contiene los **trabajos, talleres, laboratorios y desarrollos prácticos** realizados en el curso de **Estructura de Datos (código 12326)** de la **Universidad del Quindío 🏫**, correspondiente al programa de **Ingeniería de Sistemas y Computación**.
+Este repositorio contiene los **trabajos, talleres, laboratorios y desarrollos prácticos** realizados en el curso de **Estructura de Datos* de la **Universidad del Quindío**, correspondiente al programa de **Ingeniería de Sistemas y Computación**.
 
 Su propósito es organizar y centralizar el material académico del semestre, facilitando el aprendizaje autónomo, la consulta progresiva por unidades temáticas y el uso de buenas prácticas de programación orientada a objetos y control de versiones.
 
