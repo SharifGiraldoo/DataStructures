@@ -201,8 +201,29 @@ Se considera recursivo  si:
 | :---: |
 | LA RECURSIVIDAD SE DEBE USAR CUANDO SEA REALMENTE NECESARIA, ES DECIR, CUANDO NO EXISTA UNA SOLUCIÓN ITERATIVA SIMPLE |
 
+---
 
+# Paso de parámetros a los módulos recursivos
 
+## Tipos de parámetros: por valor
 
+Se hace una copia de los parámetros al pasar a la función recursiva.
 
+- Las modificaciones realizadas dentro de la función no afectan el valor original
+fuera de la función.
 
+- Al salir de la función, los parámetros vuelven a tener su valor original.
+En Java, los tipos primitivos (int, double, char, etc.) se pasan por valor, por lo que cualquier modificación dentro de la función no afecta la variable original.
+
+---
+
+## Tipos de parámetros: por referencia
+
+Se pasa la referencia de la variable, lo que permite modificar directamente el
+valor original.
+
+- Las modificaciones hechas dentro de la función afectan el valor de la variable
+fuera de ella.
+
+En Java, los objetos (como listas, arrays, o instancias de clases) se pasan por
+referencia. Esto permite modificar directamente el contenido de los objetos.

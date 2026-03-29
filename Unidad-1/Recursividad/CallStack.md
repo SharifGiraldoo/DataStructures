@@ -2,8 +2,9 @@
 
 La memoria de un ordenador a la hora de ejecutar un programa queda dividida
 en dos partes:
-● La zona donde se almacena el código del programa.
-● La zona donde se guardan los datos: pila (utilizada para llamadas recursivas).
+
+- La zona donde se almacena el código del programa.
+- La zona donde se guardan los datos: pila (utilizada para llamadas recursivas).
 
 ---
 
@@ -16,11 +17,13 @@ en dos partes:
 La pila o Call Stack, es una estructura de datos utilizada por el sistema para
 gestionar las llamadas a funciones en un programa. Funciona bajo el principio
 LIFO (Last In, First Out).
+
 Cada que se llama una función se crea un marco de pila (Stack Frame) que
 almacena:
-● Los parámetros de la función.
-● Las variables locales.
-● La dirección de retorno (donde continuar la ejecución después de que la
+
+- Los parámetros de la función.
+- Las variables locales.
+- La dirección de retorno (donde continuar la ejecución después de que la
 función termine)
 
 ---
@@ -28,6 +31,7 @@ función termine)
 # Pila
 
 Pila:
+
 - Contextos de ejecución
 - La función activa todas la funciones pendientes
 - Contexto de ejecución:
@@ -63,9 +67,13 @@ public static int sumaEnteros(int n){
 
 Escribe un programa que calcule el factorial (!) de un entero no negativo.
 1! = 1
+
 2! = 2 ➔ 2 * 1
+
 3! = 6 ➔ 3 * 2 * 1
+
 4! = 24 ➔ 4 * 3 * 2 * 1
+
 5! = 120 ➔ 5 * 4 * 3 * 2 * 1
 
 ---
