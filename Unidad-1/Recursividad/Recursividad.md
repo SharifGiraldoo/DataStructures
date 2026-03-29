@@ -54,6 +54,75 @@ divide y vence y los algoritmos de vuelta atrás.
 
 ---
 
+# Recursividad Directa
+
+```
+public static int sumaDirecta(int n) {
+  if (n == 0) return 0; // Caso base
+  return n + sumaDirecta(n - 1); // Llamada directa
+}
+```
+---
+
+# Recursividad Indirecta
+
+```
+public static int sumaIndirectaA(int n) {
+      if (n == 0) return 0; // Caso base
+      return n + sumaIndirectaB(n - 1); // Llama a la función B
+}
+
+public static int sumaIndirectaB(int n) {
+      if (n == 0) return 0; // Caso base
+      return sumaIndirectaA(n); // Llama a la función A
+}
+```
+
+---
+
+# Recursividad Lineal
+
+```
+public static int sumaLineal(int n) {
+      if (n == 0) return 0; // Caso base
+      return n + sumaLineal(n - 1); // Solo una llamada recursiva
+}
+```
+
+---
+
+# Recursividad Múltiple
+
+```
+public static int sumaMultiple(int n) {
+      if (n == 0) return 0; // Caso base
+      return n + sumaMultiple(n - 1) + sumaMultiple(n - 1); // Dos llamadas recursivas
+}
+```
+
+---
+
+# Recursividad de Cola
+
+```
+public static int sumaDeCola(int n, int acc) {
+      if (n == 0) return acc; // Caso base
+      return sumaDeCola(n - 1, acc + n); // Última operación es la llamada recursiva
+}
+```
+---
+
+# Recursividad No de Cola 
+
+```
+public static int sumaDirecta(int n) {
+      if (n == 0) return 0; // Caso base
+      return n + sumaDirecta(n - 1) // Llamada recursiva no es la última operación. Se realiza la suma después
+}
+```
+
+---
+
 # Ejemplo de la Matrushka 
 
 La Matrushka es una artesanía tradicional rusa. Es una muñeca de madera que
@@ -131,6 +200,8 @@ Se considera recursivo  si:
 | En ambos casos podemos tener ciclos infinitos | 
 | :---: |
 | LA RECURSIVIDAD SE DEBE USAR CUANDO SEA REALMENTE NECESARIA, ES DECIR, CUANDO NO EXISTA UNA SOLUCIÓN ITERATIVA SIMPLE |
+
+
 
 
 
