@@ -222,7 +222,112 @@ El valor inicial (y final ) de lista deberá ser el correspondiente al nodo que 
  </p>
 
 ---
+# Listas Enlazadas Genéricas 
+
+La definición de una lista está muy ligada al tipo de datos de sus elementos; así, se han puesto ejemplos en los que el tipo es int, otros en los que el tipo es double, otros String. Declarando el campo dato de tipo Object se consigue una lista genérica, válida para cualquier tipo de dato, aunque exigirá muchas conversiones de datos cuando se concrete para un tipo dato particular.
+
+---
+
+# Listas Circulares
+
+Una lista circular, por propia naturaleza, no tiene ni principio ni fin. Sin embargo, resulta útil establecer un nodo a partir del cual se acceda a la lista y así poder acceder a sus nodos.
+
+<p align="center">
+   <img src="img/image9.png" alt="alt text" />
+ </p>
+
+## Operaciones 
+
+Las operaciones que se realizan sobre una lista circular son similares a las operaciones sobre listas lineales, teniendo en cuenta que no hay primero ni ultimo nodo, aunque si un nodo de acceso a la lista. Estas operaciones permiten construir el TAD ListaCircular y su funcionalidad es la siguiente:
+
+- Inicialización o creación.
+- Inserción de elementos en una lista circular.
+- Eliminación de elementos de una lista circular.
+- Búsqueda de elementos de una lista circular.
+- Recorrido de cada uno de los nodos de una lista circular.
+- Verificación de lista vacía.
+
+--- 
+
+# Lista Doblemente Enlazada 
+
+En esta lista, cada elemento contiene dos punteros (referencias), además del valor almacenado. Una referencia apunta al siguiente elemento de la lista y la otra referencia apunta al elemento anterior. 
+
+<p align="center">
+   <img src="img/image10.png" alt="alt text" />
+ </p>
+
+ ## Implementación Nodo 
+
+```
+package listaDobleEnlace;
+public class Nodo
+{
+	int dato;
+	Nodo adelante;
+	Nodo atras;
+ // ...
+}
+
+```
+
+```
+public Nodo(int entrada)
+{
+dato = entrada;
+adelante = atrás = null;
+}
+
+```
+
+---
+
+# Iterable e Iterator 
+
+El concepto de Java Iterable es un concepto clásico en el mundo Java y existe desde la versión de Java 1.5 . Un Iterable  es un interface que hace referencia a una colección de elementos que se puede recorrer, ni más ni menos.
+
+<p align="center">
+   <img src="img/image11.png" alt="alt text" />
+ </p>
+
+Solo necesita que implementemos un método para poder funcionar de forma correcta, este método es iterator().
+
+<p align="center">
+   <img src="img/image12.png" alt="alt text" />
+ </p>
 
 
+ Este clase IteradorListaSimple es la que implementa los dos métodos del Iterator next() y hashNext() de tal forma que podamos recorrerla de forma sencilla utilizando una estructura forEach o while.
+
+<p align="center">
+   <img src="img/image13.png" alt="alt text" />
+ </p>
+
+ El interface Iterable es sencillo de implementar , simplemente hay que tener en cuenta que necesitamos una clase que implemente iterator para que este funcione. Ahora bien existen algunas otras ventajas que a veces pasan desapercibidas a nivel del API. Si nuestra clase implementa Iterable de forma automática incluirá los métodos por defecto (default methods) que este interface aporta.
+
+<p align="center">
+   <img src="img/image14.png" alt="alt text" />
+ </p>
+
+Un iterador  es un objeto que nos permite  recorrer una lista y presentar por pantalla todos sus elementos . Dispone de dos métodos clave para realizar esta operación hasNext() y next().
+
+<p align="center">
+   <img src="img/image15.png" alt="alt text" />
+ </p>
+
+<p align="center">
+   <img src="img/image16.png" alt="alt text" />
+ </p>
+
+A partir de Java 5 existe otra forma de recorrer una lista que es mucho mas cómoda y compacta , el uso de bucles foreach. Un bucle foreach se parece mucho a un bucle for con la diferencia de que no hace falta una variable i de inicialización:
+
+<p align="center">
+   <img src="img/image17.png" alt="alt text" />
+ </p>
 
 
+El interface Iterator dispone de un método adicional que permite eliminar objetos de una lista mientras la recorremos (el método remove):
+
+<p align="center">
+   <img src="img/image15.png" alt="alt text" />
+ </p>
